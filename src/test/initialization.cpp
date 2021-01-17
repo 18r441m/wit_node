@@ -10,7 +10,7 @@ class WitManager {
     wit::Parameter param;
     param.port_ = "/dev/ttyUSB0";
     param.ns = "wit";
-    param.baut_rate_ = 115200;
+    param.baut_rate_ = 9600;
     try {
       wd_.init(param);
     } catch (ecl::StandardException &e) {
